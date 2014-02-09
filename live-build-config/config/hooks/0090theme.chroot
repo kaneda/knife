@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Author: kaneda
+# Description: modify theme
+
+gsettings set org.gnome.desktop.background picture-uri file:///root/wallpapers/knife.png
+`dbus-launch | sed 's/^/export /'`
+gsettings set org.gnome.desktop.background picture-uri file:///root/wallpapers/knife.png
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --set /desktop/gnome/background/picture_filename --type string /root/wallpapers/knife.png
+
+rm /etc/alternatives/desktop-background
+ln -s /usr/share/images/desktop-base/knife.png /etc/alternatives/desktop-background
+
+rm /etc/alternatives/desktop-background.xml
+ln -s /usr/share/images/desktop-base/knife.xml /etc/alternatives/desktop-background.xml

@@ -1,0 +1,186 @@
+# kali meta-package depends on everything we want
+kali-linux-full
+kali-root-login
+kali-defaults
+kali-menu
+kali-debtags
+kali-archive-keyring
+debian-installer-launcher
+
+# provide l10n for everybody
+locales-all
+
+# Updates tools which have yet to be added to kali-linux meta
+lbd
+arachni
+bully
+uniscan
+automater
+
+# Packages for hashkill                                        
+libssl-dev 
+libjson0-dev
+amd-opencl-dev
+nvidia-opencl-dev
+
+# kaneda added
+adduser
+binutils
+bsdutils
+chkconfig
+coreutils
+curl
+diffutils
+dnsutils
+dsniff
+findutils
+florence
+fuse-utils
+gnupg
+gnupg-agent
+gnupg-curl
+gnutls-bin
+gzip
+haveged
+ipheth-utils
+iproute
+iptstate
+iputils-ping
+iputils-tracepath
+john
+john-data
+keepassx
+laptop-mode-tools
+libsqlite3-dev
+libsqlite3-ruby1.9.1
+liferea
+liferea-data
+lockfile-progs
+lua5.1
+lzma
+moreutils
+mtools
+ncurses-base
+ncurses-bin
+net-tools
+netcat-traditional
+openssl
+poppler-utils
+pwgen
+rfkill
+ruby1.9.1
+ruby1.9.1-dev
+rubygems
+seahorse
+seahorse-nautilus
+secure-delete
+sqlite3
+ssss
+unar
+unzip
+vim-nox
+vim-runtime
+wget
+whois
+
+# some tools that we always want
+apache2
+atftpd
+bluez
+bluez-hcidump
+#if ARCHITECTURES armel armhf
+cgpt
+#endif
+clang
+cowsay
+cryptsetup
+desktop-base
+ethtool
+expect
+#if ARCHITECTURES i386 amd64
+firmware-b43legacy-installer 
+firmware-b43-installer
+#endif
+gdb
+git
+gparted
+#if ARCHITECTURES i386 amd64
+guymager
+#endif
+iw
+leafpad
+lvm2
+mysql-server
+ncurses-hexedit
+openvpn
+p7zip-full
+parted
+php5
+php5-mysql
+python-impacket
+python-impacket-doc
+paros
+radare2
+rdesktop
+screen
+sendemail
+#snmp
+snmpd
+suckless-tools
+sudo
+tcpdump
+tftp
+tightvncserver
+tmux
+unrar
+upx-ucl
+#if ARCHITECTURES armel armhf
+vboot-utils
+vboot-kernel-utils
+#endif
+vim
+vim-gtk
+xpdf
+xtightvncviewer
+zenmap
+
+# Graphical desktops depending on the architecture
+#
+# You can replace all the remaining lines with a list of the
+# packages required to install your preferred graphical desktop
+# or you can just comment everything except the package of your
+# preferred desktop.
+
+#if ARCHITECTURES i386 amd64
+# *** GNOME DESKTOP ***
+gnome-core
+gnome-brave-icon-theme
+gnome-shell-extensions
+gnome-orca
+#endif
+
+#if ARCHITECTURES armel armhf
+# *** XFCE DESKTOP ***
+xfce4
+network-manager-gnome
+network-manager
+#endif
+
+# *** KDE DESKTOP ***
+# kde-plasma-desktop
+# kdm
+
+# *** LXDE DESKTOP ***
+# lxde
+
+# *** Enlightenment DR17 DESKTOP ***
+# e17
+
+# *** MATE DESKTOP
+# | NOTE: The mate desktop requires other changes to the live config.
+# | See http://docs.kali.org/live-build/customize-the-kali-desktop-environment
+# | for details
+# xorg
+# mate-archive-keyring
+# mate-core
+# mate-desktop-environment
