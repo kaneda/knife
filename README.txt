@@ -1,9 +1,10 @@
 ###################################
 #                                 #
-#          Knife Linux            #
+#    Tanto (短刀) Knife Linux     #
 #    A Kali live-build recipe     #
 #                                 #
 #       Authored by kaneda        #
+#		  & t0mu	  #
 #                                 #
 #    Shoutouts to:                #
 #      Hardcoded, Masshackers     #
