@@ -1,40 +1,40 @@
 ###################################
 #                                 #
 #    Tanto (短刀) Knife Linux     #
-#    A Kali live-build recipe     #
+#    a Kali live-build recipe     #
 #                                 #
-#       Authored by kaneda        #
+#       authored by kaneda        #
 #		  & t0mu	  #
 #                                 #
-#    Shoutouts to:                #
-#      Hardcoded, Masshackers     #
+#    shoutouts to:                #
+#       Sectards, Masshackers     #
 #                                 #
 ###################################
 
-Knife
+Tanto
 =====
 
-Knife is essentially a Kali live-build recipe that includes a bunch of admin tools found in Debian as well as some tools and frameworks that are little-known outside of the professional security community.
+Tanto is a Kali live-build recipe that includes a bunch of admin tools found in Debian as well as some tools and frameworks that are little-known outside of the professional security community.
 
 
 
-Installing
+Installation
 ==========
 
 ##Pre-build checklist:
 
-1) apt-get install git live-build cdebootstrap kali-archive-keyring
-2) git clone https://user@bitbucket.org/kanedasan/knife-linux.git
-	a) Check out Kali's: git clone git://git.kali.org/live-build-config.git
+1) `apt-get install git live-build cdebootstrap kali-archive-keyring`
+2) `git clone https://user@bitbucket.org/kanedasan/knife-linux.git`
+	a) Check out Kali's: `git clone git://git.kali.org/live-build-config.git`
 
 
-##To build:
+##to build:
 
-1) lb clean --purge
-2) dpkg --add-architecture amd64
-3) apt-get update
-4) lb config --bootappend-live "hostname=knife" --architecture amd64 --mirror-binary http://http.kali.org/kali --mirror-binary-security http://security.kali.org/kali-security --apt-options "--force-yes --yes"
-5) lb build
+1) `lb clean --purge`
+2) `dpkg --add-architecture amd64`
+3) `apt-get update`
+4) `lb config --bootappend-live "hostname=tanto" --architecture amd64 --mirror-binary http://http.kali.org/kali --mirror-binary-security http://security.kali.org/kali-security --apt-options "--force-yes --yes"`
+5) `lb build`
 
 ##Notes 
 
@@ -58,23 +58,19 @@ A The initial setup took between 15 and 20 hours
 Q Isn't this essentially just Kali?
 A Yes, and that's the point: this isn't so much its own distribution as an expansion to Kali, to which this distro pays homage. It includes additions to iceweasel, ruby tools, NMAP, and many interesting administrative tools, that are not well-known (see wiki or the list below).
 
-Q Weren't you the lead developer on AttackVector?
-A Yes, but due to differences of opinion (in which the organizer repeatedly damaged the project), and because I do not agree with providing a hand-cannon to nubblets (you can feel free to install and configure TOR yourself), I have left the project to pursue my own design goals (as aforementioned)
-
-
 
 Tools
 =====
 
-##From Debian
+##from Debian
 
-###For Hashkill
+###for Hashkill
 libssl-dev 
 libjson0-dev
 amd-opencl-dev
 nvidia-opencl-dev
 
-###For everything else
+###for everything else
 adduser
 binutils
 bsdutils
@@ -134,7 +130,7 @@ vim-runtime
 wget
 whois
 
-##From gems
+##from gems
 ronin (https://github.com/ronin-ruby/)
 ronin-asm
 ronin-dorks
@@ -147,7 +143,9 @@ ronin-sql
 ronin-support
 ronin-web
 
-##From the web
+##from the web
 hashkill (https://github.com/gat3way/hashkill/)
 fakeap (http://www.blackalchemy.to/project/fakeap/)
 quicksnap (https://www.soldierx.com/sxlabs/quicksnap-Customized-Automatic-Scanner-Nmap)
+
+![img](https://upload.wikimedia.org/wikipedia/commons/4/4b/Tanto_Kunimitsu.jpg)
