@@ -1,9 +1,5 @@
 Tanto (短刀) Linux
 ==================
-
-Tanto
-=====
-
 Tanto is a Kali live-build recipe that includes a bunch of admin tools found in Debian as well as some tools and frameworks that are little-known outside of the professional security community. Tor is supplemented by i2p and freenet.
 
 
