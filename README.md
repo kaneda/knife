@@ -1,20 +1,6 @@
-Tanto (短刀) Knife Linux
-========================
+Tanto (短刀) Linux
+==================
 
-"""  
-###################################
-#                                 #
-#    Tanto (短刀) Knife Linux     #
-#    a Kali live-build recipe     #
-#                                 #
-#       authored by kaneda        #
-#		  & t0mu	  #
-#                                 #
-#    shoutouts to:                #
-#       Sectards, Masshackers     #
-#                                 #
-###################################
-"""  
 Tanto
 =====
 
