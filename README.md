@@ -27,7 +27,7 @@ Installation
 2) You can use `apt-cacher-ng` to cache your packages (so that you won't need to download them from the repos upon each build). This is useful if you plan to do a lot of builds in a short time.
 
 
-
+![Ingress](http://enlightenedstl.com/images/enlightened-community-150.png)
 FAQ
 ===
 
