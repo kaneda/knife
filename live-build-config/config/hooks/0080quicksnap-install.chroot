@@ -1,12 +1,14 @@
 #!/bin/bash
 #
 # Author: kaneda
-# Date: May 25th 2013
+# Date: January 27th 2015
 # Description: Install quicksnap, a nice customization for nmap
 # Commented until further notice, as his site is down
 
+TARBALL="quicksnap.tar_0.gz"
+
 # Download
-wget "https://www.soldierx.com/system/files/sxlabs/projects/scryptz0/quicksnap.py_.tar.gz"
+wget -N https://www.soldierx.com/system/files/sxlabs/projects/alcohologist/${TARBALL}
 
 if [ $? -ne 0 ]
 then
@@ -14,7 +16,23 @@ then
 	exit 1
 fi
 
-tar -zxf quicksnap.py_.tar.gz
-mv quicksnap.py /usr/bin/
+# Validate the static MD5
+md5=`md5sum "$TARBALL" | awk '{print $1}'`
+
+if [ "$md5" != "1a9ba85f92e7e936e2b61292bcae1f6b" ]
+then
+	echo "Checksum for quicksnap does not match"
+	exit 1
+fi
+
+tar -xzf "$TARBALL"
+if [ $? -ne 0 ]
+then
+	echo "Failed to untar quicksnap"
+	exit 1
+fi
+
+mv quicksnap_1.0.py /usr/bin/
+rm "$TARBALL"
 
 exit 0

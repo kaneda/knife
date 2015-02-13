@@ -6,24 +6,34 @@ kali-menu
 kali-debtags
 kali-archive-keyring
 debian-installer-launcher
+alsa-tools
+cryptsetup
+file-roller
 
 # provide l10n for everybody
 locales-all
+console-setup
+kbd
+console-data
+console-common
 
 # Updates tools which have yet to be added to kali-linux meta
+# - kaneda
 lbd
 arachni
 bully
 uniscan
 automater
 
-# Packages for hashkill                                        
+# Packages for hashkill
+# - kaneda                                     
 libssl-dev 
 libjson0-dev
 amd-opencl-dev
-nvidia-opencl-dev
+nvidia-cuda-toolkit
 
-# kaneda added
+# Added packages
+# - kaneda
 adduser
 binutils
 bsdutils
@@ -71,8 +81,6 @@ rfkill
 ruby1.9.1
 ruby1.9.1-dev
 rubygems
-seahorse
-seahorse-nautilus
 secure-delete
 sqlite3
 ssss
@@ -83,66 +91,30 @@ vim-runtime
 wget
 whois
 
-# some tools that we always want
-apache2
-atftpd
-bluez
-bluez-hcidump
 #if ARCHITECTURES armel armhf
 cgpt
-#endif
-clang
-cowsay
-cryptsetup
-desktop-base
-ethtool
-expect
-#if ARCHITECTURES i386 amd64
-firmware-b43legacy-installer 
-firmware-b43-installer
-#endif
-gdb
-git
-gparted
-#if ARCHITECTURES i386 amd64
-guymager
-#endif
-iw
-leafpad
-lvm2
-mysql-server
-ncurses-hexedit
-openvpn
-p7zip-full
-parted
-php5
-php5-mysql
-python-impacket
-python-impacket-doc
-paros
-radare2
-rdesktop
-screen
-sendemail
-#snmp
-snmpd
-suckless-tools
-sudo
-tcpdump
-tftp
-tightvncserver
-tmux
-unrar
-upx-ucl
-#if ARCHITECTURES armel armhf
 vboot-utils
 vboot-kernel-utils
 #endif
-vim
-vim-gtk
-xpdf
-xtightvncviewer
-zenmap
+
+#if ARCHITECTURES i386 amd64
+firmware-b43legacy-installer 
+firmware-b43-installer
+guymager
+#endif
+
+# Extra Firmware
+zd1211-firmware
+firmware-ralink
+firmware-realtek
+firmware-iwlwifi
+firmware-intelwimax
+firmware-ipw2x00
+firmware-atheros
+firmware-bnx2
+firmware-libertas
+bluez-firmware
+firmware-brcm80211
 
 # Graphical desktops depending on the architecture
 #
@@ -156,6 +128,7 @@ zenmap
 gnome-core
 gnome-brave-icon-theme
 gnome-shell-extensions
+nautilus-open-terminal
 gnome-orca
 #endif
 
