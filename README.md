@@ -18,6 +18,7 @@ Knife
 
 Knife is essentially a Kali live-build recipe that includes a bunch of admin tools found in Debian as well as some tools and frameworks that are little-known outside of the professional security community.
 
+[![Documentation Status](https://readthedocs.org/projects/knife-linux/badge/?version=latest)](https://readthedocs.org/projects/knife-linux/?badge=latest)
 
 
 Installing
